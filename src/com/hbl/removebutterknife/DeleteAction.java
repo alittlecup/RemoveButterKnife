@@ -14,6 +14,7 @@ import com.intellij.psi.PsiDocumentManager;
 import com.intellij.psi.PsiElementFactory;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiMethod;
+import com.intellij.psi.PsiParameterList;
 import com.intellij.psi.search.EverythingGlobalScope;
 import gherkin.lexer.Pa;
 import java.util.ArrayList;
@@ -141,8 +142,6 @@ public class DeleteAction extends WriteCommandAction.Simple {
     }
   }
 
-
-
   private void deleteAnnotationAndGetIdNames() {
     String oneLinePattern = "^@(BindView|InjectView|Bind)\\(R2?.id.*\\)$";
     String twoLinePattern = "@(BindView|InjectView|Bind)\\(R2?.id.*\\)*;";
@@ -225,17 +224,26 @@ public class DeleteAction extends WriteCommandAction.Simple {
   }
 
   private String getMethodNameByLineNumber(PsiClass psiClass, int i) {
-    PsiMethod[] methods = psiClass.getMethods();
-    for (int j = i; j < s1.length; j++) {
-      for (PsiMethod method : methods) {
-        if (s1[j].contains(method.getName())) {
-          JvmParameter[] parameters = method.getParameters();
-          if (parameters.length > 0) {
-            return method.getName() + "+";
+    try {
+      PsiMethod[] methods = psiClass.getMethods();
+      if (methods.length == 0) return "";
+      for (int j = i; j < s1.length; j++) {
+        for (PsiMethod method : methods) {
+          if (s1[j].contains(method.getName())) {
+            System.out.println("method" + method.getName());
+            PsiParameterList parameterList = method.getParameterList();
+            if (parameterList.getParametersCount()>0) {
+              JvmParameter[] parameters = parameterList.getParameters();
+              if (parameters.length > 0) {
+                return method.getName() + "+";
+              }
+              return method.getName();
+            }
           }
-          return method.getName();
         }
       }
+    } catch (Exception e) {
+
     }
     return "";
   }
