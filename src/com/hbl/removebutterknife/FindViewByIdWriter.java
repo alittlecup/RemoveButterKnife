@@ -88,7 +88,7 @@ public class FindViewByIdWriter extends WriteCommandAction.Simple {
     }
     PsiClass gymVH = mClass.findInnerClassByName(holderClassName, false);
     PsiMethod constructor = gymVH.getConstructors()[0];
-    String view = constructor.getParameters()[0].getName() + ".";
+    String view = constructor.getParameterList().getParameters()[0].getName() + ".";
     PsiStatement[] statements = constructor.getBody().getStatements();
     if (statements.length == 0) {
       for (int i = code.size() - 1; i >= 0; i--) {
