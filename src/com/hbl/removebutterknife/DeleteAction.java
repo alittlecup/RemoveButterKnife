@@ -32,7 +32,6 @@ public class DeleteAction extends WriteCommandAction.Simple {
   PsiClass psiClass;
   PsiElementFactory psiElementFactory;
   List<Integer> tod;
-
   Map<String, String> nameidmap = new LinkedHashMap<>();
   Map<Integer, String> tcmap = new LinkedHashMap<>();
 
@@ -142,57 +141,7 @@ public class DeleteAction extends WriteCommandAction.Simple {
     }
   }
 
-  private void replaceAnnotationAndGetIdName() {
-    String pattern = "@(BindView|InjectView|Bind)\\(R2?.id.*\\)*;";
-    Pattern pattern1 = Pattern.compile(pattern);
-    int j;
-    for (j = 0; j < s1.length; j++) {
-      if (s1[j].trim().startsWith("//")) continue;
-      Matcher m = pattern1.matcher(s1[j]);
-      if (m.find()) {
-        String id = s1[j].substring(s1[j].indexOf("(") + 1, s1[j].indexOf(")"));
-        String s2 = s1[j].substring(s1[j].indexOf(")") + 1).trim();
-        String[] split = s2.split(" ");
-        String name;
-        String type;
-        if (split.length == 3) {
-          name = split[2];
-          type = split[1];
-        } else {
-          name = split[1];
-          type = split[0];
-        }
-        name = name.substring(0, name.length() - 1);
-        tcmap.put(j, s2);
-        name = name + " = " + "(" + type + ")";
-        nameidmap.put(name, id);
-        System.out.println("replace: " + type + "--" + name);
-      }
-    }
-  }
 
-  private void deleteAnnotationAndGetIdName() {
-    String pattern = "^@(BindView|InjectView|Bind)\\(R2?.id.*\\)$";
-    Pattern r = Pattern.compile(pattern);
-    for (int i = 0; i < s1.length; i++) {
-      Matcher m = r.matcher(s1[i].trim());
-      String trim = s1[i].trim();
-      if (trim.startsWith("//")) continue;
-      if (m.find()) {
-        String id = trim.substring(trim.indexOf("(") + 1, trim.length() - 1);
-        String[] s2 = s1[i + 1].trim().split(" ");
-        String name;
-        if (s2.length == 3) {
-          name = s2[2].substring(0, s2[2].length() - 1) + " = " + "(" + s2[1] + ")";
-        } else {
-          name = s2[1].substring(0, s2[1].length() - 1) + " = " + "(" + s2[0] + ")";
-        }
-        System.out.println("delete: " + name + "--" + id);
-        nameidmap.put(name, id);
-        tod.add(i);
-      }
-    }
-  }
 
   private void deleteAnnotationAndGetIdNames() {
     String oneLinePattern = "^@(BindView|InjectView|Bind)\\(R2?.id.*\\)$";

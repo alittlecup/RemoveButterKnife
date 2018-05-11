@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5140b4a-18ea-4c10-b345-27bd3d661949" name="Default" comment="" />
+    <list default="true" id="d5140b4a-18ea-4c10-b345-27bd3d661949" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/hbl/removebutterknife/DeleteAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hbl/removebutterknife/DeleteAction.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,39 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DirectoryRemoveAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hbl/removebutterknife/DirectoryRemoveAction.java">
+      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Definitions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hbl/removebutterknife/Definitions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteAction.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/hbl/removebutterknife/DeleteAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="223" column="7" lean-forward="true" selection-start-line="223" selection-start-column="7" selection-end-line="223" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#replaceAnnotationAndGetIdName#0;class#DeleteAction#0" />
-              </folding>
+            <state relative-caret-position="546">
+              <caret line="49" column="37" lean-forward="true" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -77,6 +51,9 @@
       <replace>trim</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -86,9 +63,9 @@
         <option value="$PROJECT_DIR$/src/com/hbl/removebutterknife/MainAction.java" />
         <option value="$PROJECT_DIR$/src/com/hbl/removebutterknife/FileEditorRemoveAction.java" />
         <option value="$PROJECT_DIR$/src/com/hbl/removebutterknife/DirectoryRemoteAction.java" />
-        <option value="$PROJECT_DIR$/src/com/hbl/removebutterknife/Definitions.java" />
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/com/hbl/removebutterknife/DirectoryRemoveAction.java" />
+        <option value="$PROJECT_DIR$/src/com/hbl/removebutterknife/Definitions.java" />
         <option value="$PROJECT_DIR$/src/com/hbl/removebutterknife/DeleteAction.java" />
       </list>
     </option>
@@ -105,6 +82,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -116,11 +94,6 @@
             <path>
               <item name="RemoveButterKnife" type="b2602c69:ProjectViewProjectNode" />
               <item name="RemoveButterKnife" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RemoveButterKnife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RemoveButterKnife" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RemoveButterKnife" type="b2602c69:ProjectViewProjectNode" />
@@ -282,16 +255,16 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005353" side_tool="true" weight="0.32984293" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.55183244" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32984293" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973822" visible="true" weight="0.1627409" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973822" visible="true" weight="0.1627409" />
       <window_info id="Structure" order="1" sideWeight="0.50052357" side_tool="true" weight="0.15845825" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43141362" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43141362" />
       <window_info id="Favorites" order="2" sideWeight="0.5026178" side_tool="true" weight="0.1627409" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -337,7 +310,7 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/hbl/removebutterknife/DeleteAction.java</url>
-          <line>99</line>
+          <line>96</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
@@ -349,7 +322,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/com/hbl/removebutterknife/DeleteAction.java</url>
-          <line>62</line>
+          <line>59</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
@@ -361,13 +334,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/hbl/removebutterknife/DeleteAction.java</url>
-          <line>213</line>
+          <line>160</line>
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/hbl/removebutterknife/DeleteAction.java</url>
-          <line>218</line>
+          <line>165</line>
           <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
@@ -478,7 +451,6 @@ view.getOrChooseDirectory();</expression-string>
           <caret line="145" column="47" lean-forward="true" selection-start-line="145" selection-start-column="47" selection-end-line="145" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#replaceAnnotationAndGetIdName#0;class#DeleteAction#0" />
           </folding>
         </state>
       </provider>
@@ -496,7 +468,6 @@ view.getOrChooseDirectory();</expression-string>
           <caret line="210" column="38" lean-forward="true" selection-start-line="210" selection-start-column="38" selection-end-line="210" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#replaceAnnotationAndGetIdName#0;class#DeleteAction#0" />
           </folding>
         </state>
       </provider>
@@ -635,16 +606,6 @@ view.getOrChooseDirectory();</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hbl/removebutterknife/FindViewByIdWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="154" column="11" selection-start-line="154" selection-start-column="11" selection-end-line="154" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/actionSystem/CommonDataKeys.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -680,13 +641,6 @@ view.getOrChooseDirectory();</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hbl/removebutterknife/FileEditorRemoveAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -704,6 +658,16 @@ view.getOrChooseDirectory();</expression-string>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hbl/removebutterknife/FindViewByIdWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="152" column="18" lean-forward="true" selection-start-line="152" selection-start-column="18" selection-end-line="152" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hbl/removebutterknife/DirectoryRemoveAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -716,8 +680,8 @@ view.getOrChooseDirectory();</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hbl/removebutterknife/Definitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        <state relative-caret-position="240">
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="38" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -726,12 +690,18 @@ view.getOrChooseDirectory();</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hbl/removebutterknife/DeleteAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="223" column="7" lean-forward="true" selection-start-line="223" selection-start-column="7" selection-end-line="223" selection-end-column="7" />
+        <state relative-caret-position="432">
+          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#replaceAnnotationAndGetIdName#0;class#DeleteAction#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="49" column="37" lean-forward="true" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
         </state>
       </provider>
     </entry>
