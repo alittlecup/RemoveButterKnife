@@ -232,11 +232,9 @@ public class DeleteAction extends WriteCommandAction.Simple {
           if (s1[j].contains(method.getName())) {
             System.out.println("method" + method.getName());
             PsiParameterList parameterList = method.getParameterList();
-            if (parameterList.getParametersCount()>0) {
-              JvmParameter[] parameters = parameterList.getParameters();
-              if (parameters.length > 0) {
-                return method.getName() + "+";
-              }
+            if (parameterList.getParametersCount() > 0) {
+              return method.getName() + "+";
+            } else {
               return method.getName();
             }
           }
